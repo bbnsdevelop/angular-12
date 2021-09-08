@@ -10,6 +10,9 @@ import { CalcComponent } from './calc/calc.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    CalcComponent
   ]
 })
 export class CalculatorModule { }
