@@ -30,28 +30,11 @@ if you put -g (global) you need permissions "sudo"
 
 check version in terminal:
 
-   _                      _                 ____ _     ___
-    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
-   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
-  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
- /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
-                |___/
-    
+# ng --version
 
-Angular CLI: 12.2.4
-Node: 12.22.6
-Package Manager: npm 6.14.15
-OS: linux x64
 
-Angular: 
-... 
+![Angular version](https://miro.medium.com/max/474/1*cRQJaiT9rddJquEdxv0yCw.png)
 
-Package                      Version
-------------------------------------------------------
-@angular-devkit/architect    0.1202.4 (cli-only)
-@angular-devkit/core         12.2.4 (cli-only)
-@angular-devkit/schematics   12.2.4 (cli-only)
-@schematics/angular          12.2.4 (cli-only)
 
 
 # create first project:
@@ -65,3 +48,10 @@ cd hello-world
 
 then use:
 ng serve
+
+
+# creating module:
+ng g m module_name
+
+# creating component:
+ng g c module_name/component_name --module=module_name
