@@ -55,3 +55,11 @@ ng g m module_name
 
 # creating component:
 ng g c module_name/component_name --module=module_name
+
+# creating service:
+
+ng g s module_name/service_name
+
+
+# install external lib:
+npm install --save bootstrap@3
