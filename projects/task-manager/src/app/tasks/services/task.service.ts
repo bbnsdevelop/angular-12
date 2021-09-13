@@ -25,5 +25,21 @@ export class TaskService {
     return this.listAllTasks().find(t => t.id === id)
   }
 
+  updateTask(task: Task): void {
+    const tasks = this.listAllTasks();
+
+    tasks.forEach(t =>{
+      if(t.id === task.id){
+        t = task;
+      }
+    });
+    localStorage['tasks'] = JSON.stringify(tasks);
+  }
+
+  removeByid(id: number): void{
+    const tasks = this.listAllTasks().filter(t => t.id !== id);
+    localStorage['tasks'] = JSON.stringify(tasks);
+  }
+
   
 }
