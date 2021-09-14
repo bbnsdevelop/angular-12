@@ -41,5 +41,16 @@ export class TaskService {
     localStorage['tasks'] = JSON.stringify(tasks);
   }
 
+
+  updateStatusTask(id: number): void {
+    const tasks = this.listAllTasks();
+
+    tasks.forEach(t =>{
+      if(t.id === id){
+        t.completed = !t.completed;
+      }
+    });
+    localStorage['tasks'] = JSON.stringify(tasks);
+  }
   
 }
